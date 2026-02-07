@@ -26,12 +26,9 @@ function handleLogin(event) {
     return;
   }
   
-  // If validation passes, you can send to backend or handle login
+  // If validation passes, redirect to home page
   console.log("Login attempt:", { email, password });
-  
-  // Example: redirect to home page or dashboard
-  alert("Login successful! (Demo - Replace with actual authentication)");
-  // window.location.href = "index.html";
+  window.location.href = "index.html";
 }
 
 function showError(message) {
