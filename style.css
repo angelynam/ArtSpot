@@ -1,36 +1,6 @@
-body {
-  font-family: Arial;
-  background: #F2F2F2;
+[data-tab-content] {
+    display: none;
 }
-
-.explore-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-auto-rows: 200px; /* Base height for rows */
-  grid-gap: 15px;
-  padding: 20px;
+.active[data-tab-content]{
+    display: block;
 }
-
-/* Make images fit perfectly */
-.explore-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Prevents stretching */
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.explore-item img:hover {
-  transform: scale(1.03);
-  cursor: pointer;
-}
-
-/* Custom sizes for the "Explore" feel */
-.tall {
-  grid-row: span 2;
-}
-
-.wide {
-  grid-column: span 2;
-}
-
