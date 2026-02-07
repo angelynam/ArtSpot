@@ -1,6 +1,6 @@
 [data-tab-content] {
     display: none;
 }
-.active[data-tab-content]{
+[data-tab-content].active{
     display: block;
 }
