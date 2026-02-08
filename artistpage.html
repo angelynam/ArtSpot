@@ -7,47 +7,70 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="profile-card">
-        <div class="notification-wrapper">
-            <button id="notiBtn" class="noti-btn">
-                <span class="notification-icon">🔔</span>
-                <span class="notification-count">+ 1</span>
-            </button>
-            
+<div class="profile-card">
+   <header class="main-nav">
+    <div class="nav-content">
+        <div class="logo">artSPOT</div>
+        <input type="text" class="search-bar" placeholder="Search...">
+        <div class="nav-icons">
+            <div class="circle-icon"></div>
+            <div class="circle-icon"></div>
+            <div class="circle-icon"></div>
         </div>
-        <div class="header">
-            <img src="https://via.placeholder.com/150" 
-            alt="Profile Picture" 
-            class="profile-pic" 
-            id="profileImage">
-
-            <h1 id="sellerName">Sarah Daves</h1>
-            <div class="tagline">Digital Artist</div>
-        </div>
-
-        <div class="about">
-            <p>Helping brands scale through intentional design and robust development. I specialize in turning complex ideas into user-friendly digital experiences.</p>
-        </div>
-
-        <div class="stats">
-            <div class="stat-item">
-                <span id="rating">4.9/5</span>
-                <small>Rating</small>
-            </div>
-            <div class="stat-item">
-                <span id="sales">500+</span>
-                <small>Sales</small>
-            </div>
-            <div class="stat-item">
-                <span>&lt; 2h</span>
-                <small>Reply Time</small>
-            </div>
-        </div>
-
-        <button class="contact-btn" id="contactBtn">Message Me</button>
-        <p id="statusMessage" style="display:none; text-align:center; margin-top:10px; font-size:0.8rem;"></p>
     </div>
+</header>
+
+<div class="artist-page-container">
+    <aside class="sidebar">
+        
+        <div class="artist-image-box">
+             <img src="artist-pfp.jpg" alt="Artist" class="pfp-img" onerror="this.src='https://via.placeholder.com/150'">
+        </div>
+
+        <h1 class="artist-name">Artist name</h1>
+
+        <div class="info-card">
+            <div class="inner-bio-box">
+                <p class="intro-text">Artist's intro</p>
+                <div class="social-links">links for socials</div>
+            </div>
+            <button class="message-btn" id="contactBtn">Message me</button>
+        </div>
+    </aside>
+
+     <main class="portfolio-section">
+        <ul class="portfolio-tabs">
+            <li class="tab active" data-tab-target="#gallery">Gallery</li>
+            <li class="tab" data-tab-target="#contact-info">Contacts</li>
+        </ul>
+
+        <div id="gallery" data-tab-content class="active">
+            <div class="portfolio-grid">
+                <div class="grid-item"><img src="https://via.placeholder.com/300" alt="Work"></div>
+                <div class="grid-item"><img src="https://via.placeholder.com/300" alt="Work"></div>
+                <div class="grid-item"><img src="https://via.placeholder.com/300" alt="Work"></div>
+                <div class="grid-item"><img src="https://via.placeholder.com/300" alt="Work"></div>
+                <div class="grid-item"><img src="https://via.placeholder.com/300" alt="Work"></div>
+                <div class="grid-item"><img src="https://via.placeholder.com/300" alt="Work"></div>
+                <div class="grid-item"><img src="https://via.placeholder.com/300" alt="Work"></div>
+                <div class="grid-item"><img src="https://via.placeholder.com/300" alt="Work"></div>
+                <div class="grid-item"><img src="https://via.placeholder.com/300" alt="Work"></div>
+            </div>
+        </div>
+
+        <div id="contact-info" data-tab-content>
+            <div class="contact-details-box">
+                <h3>Get in Touch</h3>
+                <p><strong>Email:</strong> artist@artspot.com</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Studio:</strong> 123 Creative Lane, Art City</p>
+            </div>
+        </div>
+    </main>
+    </div>
+
+
+   
 
     <script src="script.js"></script>
 </body>
