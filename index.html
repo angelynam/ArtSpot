@@ -3,33 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>ArtSpot</title>
-    <link rel="stylesheet" href="style.css">
   </head>
-
 <body>
-     <ul>
-    <li>Home</li>
-    <li>Profile</li>
-    <li>Orders</li>
+    <ul>
+        <li data-tab-target="#home">Home</li>
+        <li data-tab-target="#profile">Profile</li>
+        <li data-tab-target="#orders">Orders</li>
     </ul>
 
     <div class ="tab-content">
-        <div id="home">
+        <div id="home" data-tab-content class = "active">
             <h1>Home</h1>
             <p>Welcome to the ArtSpot homepage!</p>
         </div>
-        <div id="profile">
+        <div id="profile" data-tab-content>
             <h1>Profile</h1>
             <p>This is your profile page.</p>
         </div>
-        <div id="orders">
+        <div id="orders" data-tab-content>
             <h1>Orders</h1>
             <p>Here you can view your orders.</p>
         </div>
     </div>
-
 </body>
 </html>
