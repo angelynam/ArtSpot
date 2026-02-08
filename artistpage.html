@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Profile | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="notification-wrapper">
+            <button id="notiBtn" class="noti-btn">
+                <span class="notification-icon">🔔</span>
+                <span class="notification-count">+ 1</span>
+            </button>
+            
+        </div>
+        <div class="header">
+            <img src="https://via.placeholder.com/150" 
+            alt="Profile Picture" 
+            class="profile-pic" 
+            id="profileImage">
+
+            <h1 id="sellerName">Sarah Daves</h1>
+            <div class="tagline">Digital Artist</div>
+        </div>
+
+        <div class="about">
+            <p>Helping brands scale through intentional design and robust development. I specialize in turning complex ideas into user-friendly digital experiences.</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span id="rating">4.9/5</span>
+                <small>Rating</small>
+            </div>
+            <div class="stat-item">
+                <span id="sales">500+</span>
+                <small>Sales</small>
+            </div>
+            <div class="stat-item">
+                <span>&lt; 2h</span>
+                <small>Reply Time</small>
+            </div>
+        </div>
+
+        <button class="contact-btn" id="contactBtn">Message Me</button>
+        <p id="statusMessage" style="display:none; text-align:center; margin-top:10px; font-size:0.8rem;"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
