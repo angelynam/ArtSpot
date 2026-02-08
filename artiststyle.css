@@ -15,25 +15,69 @@
 .nav-content {
     display: flex;
     align-items: center;    /* Vertically centers everything in the pink bar */
-    justify-content: flex-start; /* Aligns items to the left/start */
+    justify-content: space-between; /* Aligns items to the left/start */
     max-width: 1200px;
     margin: 0 auto;
     gap: 20px
 }
 
 
-.logo { 
-  font-weight: bold; font-size: 1.5rem; color: black; 
+.logo-link
+	{text-decoration:none;
+	display:block}
+.logo
+	{height:55px;
+	width:auto;
+	display:block}
+
+.search-container
+    {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the search bar horizontally */
+    border-radius: 25px;
+    flex-grow: 1;
+    max-width: 700px;
+    margin: 0 40px;
+    width: 100%;
+    font-size: 16px;
+    background-color: white;
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 15px;
+    padding: 10px 15px 10px 45px;
+    border-radius: 10px;
+   border: none;
+}
+.search-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 50px;
 }
 
-.search-bar {
-    flex-grow: 1;
-    width: 300px; 
-    border-radius: 20px;
-    border: none;
-    padding: 10px 20px;
-    outline: none;
+
+
+.search-icon {
+    left: 150px;
+    width: 40px;   /* Sets a uniform width */
+    height: 40px;  /* Sets a uniform height */
+    object-fit: cover; /* Ensures the image doesn't stretch or distort */
+    display: block;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    align-items: center;
 }
+
+
+.search-icon-circle img {
+    width: 20px;            /* Size of the actual magnifying glass */
+    height: 20px;
+    opacity: 0.6;  
+    
+}
+
+
 
 .nav-icons {
     display: flex;          /* CHANGED: This puts the children (circles) in a row */
@@ -41,6 +85,32 @@
     gap: 12px;               /* Space between each white circle */
     align-items: center;    /* Ensures circles are centered relative to search bar */
 }
+.nav-buttons
+	{display: flex;         /* Lines items up horizontally */
+    flex-direction: row;   /* Ensures they stay in a row */
+    gap: 12px;             /* Adds a specific gap between the buttons */
+    align-items: center;   /* Centers them vertically */
+}
+.nav-btn
+	{
+    background:white;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+
+    border-radius:50%;
+	width:45px;
+	height:45px;
+}
+.nav-btn img
+	{width: 24px;   /* Sets a uniform width */
+    height: 24px;  /* Sets a uniform height */
+    object-fit: contain; /* Ensures the image doesn't stretch or distort */
+    display: block;
+    }
 
 .circle-icon {
     width: 35px;
@@ -64,6 +134,7 @@
     width: 250px;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0
 }
 
 /* THE ARTIST IMAGE BOX: Styling for the top sidebar container */
@@ -123,10 +194,13 @@
     padding: 25px;
 }
 
+
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns across */
+    grid-template-columns: repeat(3, 1fr); /* Keeps it 3 columns */
     gap: 15px;
+    max-width: 800px; /* Limits how wide the whole grid can get */
+    margin: 0 auto;
 }
 
 .grid-item {
@@ -142,6 +216,7 @@
     border-radius: 25px;
     padding: 25px;
 }
+
 .portfolio-tabs {
     display: flex;
     list-style: none;
@@ -177,7 +252,11 @@
 }
 
 .grid-item img { 
-  width: 100%; border-radius: 10px; 
+    width: 100%;       /* Fill the square slot */
+    height: 100%;      /* Fill the square slot */
+    object-fit: cover; /* Prevents stretching */
+    display: block;
+    border-radius: 15px;
 }
 
 /* Styling for the Contacts box */

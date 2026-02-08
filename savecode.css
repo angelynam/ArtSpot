@@ -1,0 +1,44 @@
+display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns across */
+    gap: 15px;
+
+//grid item img
+    width: 50%;
+    height: 50%;
+    object-fit: cover; /* Ensures the image fills the grid item without stretching */
+    display: block;
+    border-radius: 10px; 
+
+
+    /* sidebar width: 250px;
+    display: flex;
+    flex-direction: column;
+*/
+    .portfolio-section {
+    flex-grow: 1;
+    background: var(--card-bg);
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.search-container
+	{flex-grow:1;
+	max-width:700px;
+	margin:0 40px
+    
+}
+
+.search-icon
+	{left:15px;
+	top:50%;
+	height:23px;
+	opacity:100%;
+    background:white;
+}
+.search-icon img
+	{width: 24px;   /* Sets a uniform width */
+    height: 24px;  /* Sets a uniform height */
+    object-fit: contain; /* Ensures the image doesn't stretch or distort */
+    display: block;
+    }
+    
