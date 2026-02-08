@@ -2,26 +2,21 @@
 :root {
     --artspot-pink: #ff66aa; /* Header & Button color */
     --card-bg: #d9d9d9;      /* Light grey containers */
-    --inner-bg: #bfbfbf;     /* Darker grey inner boxes */
+    --inner-bg: #bfbfbf;  
+       /* Darker grey inner boxes */
 }
 
-/* Header Styling */
-.main-nav {
-    background-color: var(--artspot-pink);
-    padding: 10px 40px;
-    margin-bottom: 15px;
-}
-
-.nav-content {
-    display: flex;
-    align-items: center;    /* Vertically centers everything in the pink bar */
-    justify-content: space-between; /* Aligns items to the left/start */
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 20px
-}
-
-
+body
+	{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+	margin:0;
+	background-color:#FFFCFD;
+	color:#333}
+.header
+	{background-color:#FE71A5;
+	padding:15px 30px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between}
 .logo-link
 	{text-decoration:none;
 	display:block}
@@ -30,95 +25,89 @@
 	width:auto;
 	display:block}
 
-.search-container
-    {
+
+.nav-btn img
+	{height:24px}
+
+    .navbar {
+    background-color: var(--art-pink);
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers the search bar horizontally */
-    border-radius: 25px;
-    flex-grow: 1;
-    max-width: 700px;
-    margin: 0 40px;
-    width: 100%;
-    font-size: 16px;
-    background-color: white;
-    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 15px;
-    padding: 10px 15px 10px 45px;
-    border-radius: 10px;
-   border: none;
+    padding: 5px 20px;
+    gap: 20px;
 }
-.search-container input {
-    width: 100%;
+
+/* ===== HEADER / NAVBAR ===== */
+.navbar {
+    background-color: var(--artspot-pink);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    height: 75px;
+}
+
+/* Logo */
+.nav-logo {
+    height: 45px;
+    width: auto;
+}
+
+/* Search */
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-center input {
+    width: 65%;
+    max-width: 520px;
+    padding: 12px 20px;
+    border-radius: 30px;
     border: none;
     outline: none;
-    font-size: 16px;
-    border-radius: 50px;
+    font-size: 15px;
+    box-shadow: 0 0 12px rgba(255,255,255,0.4);
 }
 
-
-
-.search-icon {
-    left: 150px;
-    width: 40px;   /* Sets a uniform width */
-    height: 40px;  /* Sets a uniform height */
-    object-fit: cover; /* Ensures the image doesn't stretch or distort */
-    display: block;
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    align-items: center;
-}
-
-
-.search-icon-circle img {
-    width: 20px;            /* Size of the actual magnifying glass */
-    height: 20px;
-    opacity: 0.6;  
-    
-}
-
-
-
-.nav-icons {
-    display: flex;          /* CHANGED: This puts the children (circles) in a row */
-    flex-direction: row;    /* Explicitly tells flex to stay in a line */
-    gap: 12px;               /* Space between each white circle */
-    align-items: center;    /* Ensures circles are centered relative to search bar */
-}
-.nav-buttons
-	{display: flex;         /* Lines items up horizontally */
-    flex-direction: row;   /* Ensures they stay in a row */
-    gap: 12px;             /* Adds a specific gap between the buttons */
-    align-items: center;   /* Centers them vertically */
-}
-.nav-btn
-	{
-    background:white;
-    padding: 8px;
+/* Right nav buttons */
+.nav-right {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-
-    border-radius:50%;
-	width:45px;
-	height:45px;
+    gap: 10px;
 }
-.nav-btn img
-	{width: 24px;   /* Sets a uniform width */
-    height: 24px;  /* Sets a uniform height */
-    object-fit: contain; /* Ensures the image doesn't stretch or distort */
-    display: block;
-    }
 
-.circle-icon {
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-radius: 50%;
-    flex-shrink: 0; 
+.nav-item {
+    background: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.2s ease;
 }
+
+.nav-item:hover {
+    background: #ffe1ec;
+}
+
+.nav-item.active {
+    font-weight: 700;
+}
+
+
+
+[data-tab-content] { 
+    display: none; 
+}
+.active[data-tab-content] { 
+    display: block; 
+}
+
+
+
+
 
 /* Layout Container */
 .artist-page-container {
@@ -225,27 +214,6 @@
     border-bottom: 2px solid var(--inner-bg);
 }
 
-.tab {
-    padding: 10px 20px;
-    cursor: pointer;
-    font-weight: bold;
-    color: black;          /* Default color is black */
-    transition: color 0.3s ease; /* Smooth color transition */
-    border-bottom: 3px solid transparent; /* Hidden border by default */
-}
-
-/* Active state when clicked (Pink) */
-.tab.active {
-    color: var(--artspot-pink); /* Changes text to pink */
-    border-bottom: 3px solid var(--artspot-pink); /* Pink underline */
-}
-
-[data-tab-content] { 
-    display: none; 
-}
-.active[data-tab-content] { 
-    display: block; 
-}
 
 .portfolio-grid { 
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; 

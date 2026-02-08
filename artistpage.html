@@ -8,26 +8,43 @@
 </head>
 <body>
 <div class="profile-card">
-   <header class="main-nav">
-    <div class="nav-content">
-        <a href="index.html" class="logo-link">
-            <img src="ArtLogo.png" alt="ArtSpot Logo" class="logo">
-        </a>
+ <header class="navbar">
+  <!-- Logo -->
+  <div class="nav-left">
+    <a href="index.html" class="logo-link">
+      <img src="ArtLogo.png" alt="ArtSpot Logo" class="nav-logo">
+    </a>
+  </div>
 
-        <div class="search-container">
-            <img src="search.png" alt="search" class="search-icon">
-            <input type="text" placeholder="Search artists or work..."> 
+  <!-- Search -->
+  <div class="nav-center">
+    <input type="text" placeholder="Search..." class="search-input">
+  </div>
 
-            
-        </div>
-
-        <div class="nav-buttons">
-            <button class="nav-btn"><img src="image1.jpeg" alt="Home"></button>
-            <button class="nav-btn"><img src="image2.jpeg" alt="Cart"></button>
-            <button class="nav-btn"><img src="image3.jpeg" alt="Settings"></button>
-        </div>
-    </div>
+  <!-- Navigation buttons -->
+  <nav class="nav-right">
+    <a href="#" class="nav-item active">Home</a>
+    <a href="#" class="nav-item">Profile</a>
+    <a href="#" class="nav-item">Orders</a>
+    <a href="#" class="nav-item">Explore</a>
+  </nav>
 </header>
+
+    <div class="tab-content">
+        <div id="home" data-tab-content class="active">
+            <section class="spotlight-section">
+            <section class="smasonry-grid"></section>
+        <div id="profile" data-tab-content><h1>Profile</h1></div>
+        <div id="orders" data-tab-content><h1>Orders</h1></div>
+        <div id="explore" data-tab-content><h1>Explore</h1></div>
+    </div>
+    <div class="nav-buttons">
+        <button class="nav-btn"><img src="image1.jpeg" alt="Home"></button>
+        <button class="nav-btn"><img src="image2.jpeg" alt="Cart"></button>
+        <button class="nav-btn"><img src="image3.jpeg" alt="Settings"></button>
+    </div>
+</div>
+
 
 <div class="artist-page-container">
     <aside class="sidebar">

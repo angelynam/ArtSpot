@@ -41,4 +41,13 @@ display: grid;
     object-fit: contain; /* Ensures the image doesn't stretch or distort */
     display: block;
     }
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;          /* Default color is black */
+    transition: color 0.3s ease; /* Smooth color transition */
+    border-bottom: 3px solid transparent; /* Hidden border by default */
+}
     
