@@ -16,8 +16,8 @@
     align-items: stretch;  /* Makes the pink bar fill the full height of the header */
     justify-content: space-between;
     position: fixed;
-    top: 0;
     width: 1500px;
+    top: 0;
     z-index: 1000;
     left: 0%;
     
@@ -126,6 +126,7 @@
 
 /* Layout Container */
 .artist-page-container {
+  
     display: flex;
     gap: 20px;
     padding: 20px;
@@ -135,6 +136,7 @@
 
 /* Sidebar Layout */
 .sidebar {
+    top:25px;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -143,6 +145,7 @@
 
 /* THE ARTIST IMAGE BOX: Styling for the top sidebar container */
 .artist-image-box {
+    top:25px;
     background: var(--card-bg);
     padding: 20px;
     border-radius: 25px; /* Matches your rounded wireframe corners */
@@ -152,6 +155,7 @@
 }
 
 .pfp-img {
+    top:25px;
     width: 100%;
     aspect-ratio: 1/1; /* Keeps the image square */
     border-radius: 15px;
@@ -160,6 +164,7 @@
 }
 
 .artist-name {
+    top:25px;
     font-size: 1.4rem;
     margin: 15px 0 15px 10px; /* Space around the text */
     font-family: sans-serif;
@@ -167,12 +172,14 @@
 
 /* Info Card & Inner Bio Box */
 .info-card {
+    top:25px;
     background: var(--card-bg);
     padding: 15px;
     border-radius: 25px;
 }
 
 .inner-bio-box {
+    top:25px;
     background: var(--inner-bg);
     border-radius: 15px;
     padding: 20px;
@@ -181,6 +188,7 @@
 }
 
 .message-btn {
+    top:25px;
     background-color: var(--artspot-pink);
     border: none;
     width: 100%;
@@ -192,6 +200,7 @@
 
 /* Portfolio Grid: Right side */
 .portfolio-section {
+    top:25px;
     flex-grow: 1;
     background: var(--card-bg);
     border-radius: 25px;
@@ -200,6 +209,7 @@
 
 
 .portfolio-grid {
+    top:25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Keeps it 3 columns */
     gap: 15px;
@@ -208,6 +218,7 @@
 }
 
 .grid-item {
+    top:25px;
     background: var(--inner-bg);
     aspect-ratio: 1/1; /* Keeps grid slots square */
     border-radius: 15px;
@@ -215,6 +226,7 @@
 
 /* Portfolio Grid: Right side */
 .portfolio-section {
+    top:25px;
     flex-grow: 1;
     background: var(--card-bg);
     border-radius: 25px;
@@ -222,6 +234,7 @@
 }
 
 .portfolio-tabs {
+    top:25px;
     display: flex;
     list-style: none;
     padding: 0;
@@ -252,10 +265,12 @@
 }
 
 .portfolio-grid { 
+    top:25px;
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; 
 }
 
 .grid-item img { 
+    top:25px;
     width: 100%;       /* Fill the square slot */
     height: 100%;      /* Fill the square slot */
     object-fit: cover; /* Prevents stretching */
@@ -265,6 +280,7 @@
 
 /* Styling for the Contacts box */
 .contact-details-box {
+    top:25px;
     background: var(--inner-bg);
     padding: 30px;
     border-radius: 15px;
