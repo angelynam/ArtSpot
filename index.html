@@ -8,25 +8,56 @@
     <title>ArtSpot</title>
   </head>
 <body>
-    <ul>
-        <li data-tab-target="#home">Home</li>
-        <li data-tab-target="#profile">Profile</li>
-        <li data-tab-target="#orders">Orders</li>
-    </ul>
-
-    <div class ="tab-content">
-        <div id="home" data-tab-content class = "active">
-            <h1>Home</h1>
-            <p>Welcome to the ArtSpot homepage!</p>
-        </div>
-        <div id="profile" data-tab-content>
-            <h1>Profile</h1>
-            <p>This is your profile page.</p>
-        </div>
-        <div id="orders" data-tab-content>
-            <h1>Orders</h1>
-            <p>Here you can view your orders.</p>
-        </div>
+   <header class="navbar">
+    <div class="logo">
+        <img src="ArtLogo.png" alt="ArtSpot Logo" class="logo-img">
     </div>
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search...">
+    </div>
+    <ul class="tabs">
+        <li data-tab-target="#home" class="active tab">Home</li>
+        <li data-tab-target="#profile" class="tab">Profile</li>
+        <li data-tab-target="#orders" class="tab">Orders</li>
+        <li data-tab-target="#explore" class="tab">Explore</li>
+    </ul>
+</header>
+
+<div class="tab-content">
+    <div id="home" data-tab-content class="active">
+        <section class="spotlight-section">
+            <h3>Artist Spotlight</h3>
+            <div class="spotlight-row">
+                <div class="spotlight-card"></div>
+                <div class="spotlight-card"></div>
+                <div class="spotlight-card"></div>
+                <div class="spotlight-card"></div>
+                <div class="spotlight-card"></div>
+                <div class="spotlight-card"></div>
+                <div class="spotlight-card"></div>
+                <div class="spotlight-card"></div>
+            </div>
+        </section>
+
+        <section class="masonry-grid">
+            <div class="grid-item tall"></div>
+            <div class="grid-item short"></div>
+            <div class="grid-item medium"></div>
+            <div class="grid-item tall"></div>
+            <div class="grid-item medium"></div>
+            <div class="grid-item tall"></div>
+            <div class="grid-item short"></div>
+            <div class="grid-item short"></div>
+            <div class="grid-item tall"></div>
+            <div class="grid-item tall"></div>
+            <div class="grid-item short"></div>
+            <div class="grid-item medium"></div>
+            <div class="grid-item tall"></div>
+        </section>
+    </div>
+    <div id="profile" data-tab-content><h1>Profile</h1></div>
+    <div id="orders" data-tab-content><h1>Orders</h1></div>
+    <div id="explore" data-tab-content><h1>Explore</h1></div>
+</div>
 </body>
 </html>
